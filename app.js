@@ -1,3 +1,4 @@
+
 const form = document.querySelector('.form-quizz');
 let tableauResultats = [];
 const reponses = ['c','a','b','a','c'];
@@ -20,6 +21,8 @@ form.addEventListener('submit', (e) => {
     tableauResultats = [];
 })
 
+
+/*
 function verifFunc(tabResultats) {
 
     for(let a = 0; a < 5; a++){
@@ -37,7 +40,7 @@ function verifFunc(tabResultats) {
     couleursFonction(verifTableau);
     verifTableau = [];
 }
-
+*/
 function afficherResultats(tabCheck) {
 
     const nbDeFautes = tabCheck.filter(el => el !== true).length;
@@ -83,7 +86,6 @@ function afficherResultats(tabCheck) {
 
 }
 
-
 function couleursFonction(tabValBool) {
 
     for(let j = 0; j < tabValBool.length; j++){
@@ -103,14 +105,12 @@ function couleursFonction(tabValBool) {
 
 }
 
+
 toutesLesQuestions.forEach(item => {
     item.addEventListener('click', () => {
         item.style.background = "white";
     })
 })
-
-
-
 
 
 
