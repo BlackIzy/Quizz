@@ -3,30 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz JS</title>
+    <title>Quizz GIT</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="question-block">
-        <h4> Quelles sont les deux propriétés de configuration que l’outil s’attend à configurer après l’installation de Git et avant l’émission du premier commit ?</h4>
+    
+  <h1>Quizz Git Basic !</h1>
 
-        <div>
-            <input type="radio" id="Ljubljana" name="q4" value="a" checked>
-            <label for="Ljubljana">Nom d’utilisateur et adresse e-mail</label>
-        </div>
-        
-        <div>
-            <input type="radio" id="Belgrade" name="q4" value="b">
-            <label for="Belgrade">Nom d’utilisateur et adresse ip</label>
-        </div>
-        
-        <div>
-            <input type="radio" id="Bratislava" name="q4" value="c">
-            <label for="Bratislava">Nom d’utilisateur et mot de passe</label>
-        </div>
-    </div>    
+  <div class="container-global">
 
+    <form class="form-quizz">
+
+          <div class="question-block">
+            <h4>Quel fichier est utilisé pour demander à Git d’ignorer certains fichiers ? </h4>
+            
+            <div>
+                <input type="radio" id="Clovis" name="q1" value="a"checked>
+                <label for="Clovis">ignore.txt</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Lincoln" name="q1" value="b">
+                <label for="Lincoln">git.ignore.txt</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Bonaparte" name="q1" value="c">
+                <label for="Bonaparte">git.ignore</label>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <h4>Quelle commande est utilisée pour configurer un nouveau dépôt Git ?</h4>
+            <div>
+                <input type="radio" id="date1" name="q2" value="a" checked>
+                <label for="date1">git init</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="date2" name="q2" value="b">
+                <label for="date2">git bash</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="date3" name="q2" value="c">
+                <label for="date3">git install</label>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <h4>Comment créer une branche et y accéder directement ?</h4>
+            <div>
+                <input type="radio" id="date4" name="q3" value="a" checked>
+                <label for="date4">git checkout -b <nom_branche></label>
+            </div>
+            
+            <div>
+                <input type="radio" id="date5" name="q3" value="b">
+                <label for="date5">git branch --checkout <nom_branche>label>
+            </div>
+            
+            <div>
+                <input type="radio" id="date6" name="q3" value="c">
+                <label for="date6">git branch switch <nom_branche></label>
+            </div>
+        </div>
+
+
+        <div class="question-block">
+            <h4> Quelles sont les deux propriétés de configuration que l’outil s’attend à configurer après l’installation de Git et avant l’émission du premier commit ?</h4>
+
+            <div>
+                <input type="radio" id="Ljubljana" name="q4" value="a" checked>
+                <label for="Ljubljana">Nom d’utilisateur et adresse e-mail</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Belgrade" name="q4" value="b">
+                <label for="Belgrade">Nom d’utilisateur et adresse ip</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Bratislava" name="q4" value="c">
+                <label for="Bratislava">Nom d’utilisateur et mot de passe</label>
+            </div>
+        </div>
+
+
+        <div class="question-block">
+            <h4>Quel est l’éditeur de texte par défaut pour le shell Bash avec une installation Git basée sur Windows ?</h4>
+            <div>
+                <input type="radio" id="m1" name="q5" value="a"
+                    checked>
+                <label for="m1">Notepad++</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="m2" name="q5" value="b">
+                <label for="m2">Vim</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="m3" name="q5" value="c">
+                <label for="m3">Bash</label>
+            </div>
+        </div>
+
+        <button type="submit">Validez vos choix !</button>
+    </form>
 
     <div class="resultats">
       <h2>Cliquez sur valider pour voir les résultats.</h2>
@@ -34,9 +119,9 @@
       <p class="note"></p>
     </div>
   </div>
-  
-  
-  
-      <script src="app.js"></script>
-  </body>
-  </html>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
