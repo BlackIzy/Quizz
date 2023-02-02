@@ -9,7 +9,6 @@ form.addEventListener('submit', (e) => {
     verifFunc(tableauResultats);
     tableauResultats = [];
 })
-
 function verifFunc(tabResultats) {
 
     for(let a = 0; a < 5; a++){
@@ -21,7 +20,6 @@ function verifFunc(tabResultats) {
         }
 
     }
-
     verifTableau = [];
 }
 
@@ -43,3 +41,9 @@ function couleursFonction(tabValBool) {
     }
 
 }
+    // console.log(verifTableau);
+    afficherResultats(verifTableau);
+    couleursFonction(verifTableau);
+    verifTableau = [];
+}
+
