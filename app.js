@@ -1,13 +1,3 @@
-const form = document.querySelector('.form-quizz');
-let tableauResultats = [];
-const reponses = ['c','a','b','a','c'];
-const emojis = ['✔️','✨','👀','😭','👎'];
-const titreResultat = document.querySelector('.resultats h2');
-const noteResultat = document.querySelector('.note');
-const aideResultat = document.querySelector('.aide');
-const toutesLesQuestions = document.querySelectorAll('.question-block');
-let verifTableau = [];
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     // console.log(document.querySelector('input[name="q1"]:checked').value);
